@@ -8,7 +8,7 @@ public class PreparedStatements {
         String password = "tiger";
         String query="SELECT * FROM employees where name=?;";
         try{
-            Class.forName("com.sql.jdbc.Driver");
+            Class.forName("com.mysql.jdbc.Driver");
             System.out.println("Driver loaded Successfully...");
         }catch(ClassNotFoundException e){
             System.out.println(e.getMessage());
